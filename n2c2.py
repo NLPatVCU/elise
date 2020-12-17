@@ -32,19 +32,19 @@ if first_run:
     if train_data_path==None:
         raise ParameterError("If --first_run, then --train is required.")
     print("Creating vocab file...")
-    #create_vocab_file(train_data_path)
+    create_vocab_file(train_data_path)
     print("Done!")
     if base_elmo:
         print("Generating ELMo [base] embeddings...")
-        #VocabProcessorBase(num_threads)
+        VocabProcessorBase(num_threads)
     elif bert:
         print("Generating BERT embeddings...")
-        #VocabProcessorBert(num_threads)
+        VocabProcessorBert(num_threads)
     print("Done!")
     print("Data mapping...")
-    #data_mapping()
+    data_mapping()
     print("Done!")
-#    generate_similarity_matrix(num_threads)
-    #pivot(num_threads)
-    # merge_clusters(num_threads)
+    generate_similarity_matrix(num_threads)
+    pivot(num_threads)
+    merge_clusters(num_threads)
 
