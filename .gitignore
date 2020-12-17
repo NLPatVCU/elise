@@ -1,0 +1,6 @@
+data/*
+embeddingfs/*
+clusters_and_similarity/*
+pivot_lists/*
+processed_data/*
+config-files/*
